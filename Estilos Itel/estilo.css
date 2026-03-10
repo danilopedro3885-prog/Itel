@@ -230,6 +230,7 @@ h2::after {
     display: flex;
     justify-content: center;
     gap: 35px;
+    padding-bottom: 40px;
 }
 
 .Marcas img {
