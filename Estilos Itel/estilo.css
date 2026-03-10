@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+
+}
+
+.Logo img {
+    width: 56px;
+    height: 60px;
+    display: block;
+}
+
+header {
+    background-color: rgba(245, 245, 245, 0.95);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding:0px 20px 10px 0;
+    position: relative;
+    font-size: 18px;
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: "";                
+    display: block;              
+    width: 80px;                 
+    height: 4px;                 
+    background-color: #3b82f6;  
+    margin: 10px auto 0 auto;    
+    border-radius: 2px; 
+}
+.Corpo{
+    background-color:#eceeef;
+    width: 100%;
+    height: 600px;
+}
+main {
+    display: block;
+    width: auto;
+    height: 400px;
+    background-color:  #f2f2f2;
+    padding: 20px 10px;
+}
+main p{
+    text-align: justify;
+    font-size: 19px;
+    line-height: 1.6;
+    padding: 20px 20px 0 20px;
+}
+body{
+    background-color: #e5e7eb;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+h2::after{
+    content: "";                
+    display: block;              
+    width: 80px;                 
+    height: 4px;                 
+    background-color: #3b82f6;  
+    margin: 10px auto 0 auto;    
+    border-radius: 2px; 
+}
+
+.paiCurso {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+.filhaCurso {
+    width: 350px;
+    height: 420px;
+     display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+.filhaCurso p{
+    font-size: 20px;
+    padding: 20px 10px 0 20px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.filhaCurso img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.filhaCurso button{
+    margin-top: auto;
+    margin-bottom: 15px;     
+    align-self: center;     
+    padding: 10px 100px;
+    background-color: white;
+    color: #3b82f6;
+    border: solid #3b82f6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.filhaCurso button:hover{
+    transform: scale(1.05);
+    background-color: #3b82f6;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.Mensagem {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    width: 660px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 13px;
+    margin-top: 5px;
+    animation: moverDireita 15s ease-in-out infinite;
+}
+.MensagemClaudio h2{
+    padding-bottom: 0px;
+}
+.Mensagem h2::after{
+    width: 0;
+    height: 0;
+}
+
+.MensagemClaudio {
+    text-align: center;
+}
+
+.MensagemClaudio p {
+    color: blue;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.Parceiros {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.Parceiros img {
+    width: 125px;
+    height: 100px;
+}
+
+.Apoio {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.Apoio img{
+    width: 125px;
+    height: 100px;
+}
+
+.Marcas{
+     display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.Marcas img {
+    width: 125px;
+    height: 100px;
+}
+@keyframes moverDireita {
+  0%{
+    transform: translateX(0);
+  }
+
+  50%{
+    transform: translateX(250px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
