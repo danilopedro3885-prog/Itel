@@ -22,8 +22,8 @@ body {
 }
 
 header {
-    background: #1e3a8a;
-    color: white;
+    background: white;
+    color: black;
     padding: 20px 0;
 }
 
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -50,8 +50,8 @@ nav a:hover {
 }
 
 .banner {
-    background: #e0e0e0;
-    color: whi;
+    background: #003366;
+    color: white;
     padding: 40px 0;
     text-align: center;
 }
@@ -113,7 +113,7 @@ main {
     margin-top: auto;
     margin-bottom: 15px;
     align-self: center;
-    background: #1e3a8a;
+    background: #003366;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -159,7 +159,7 @@ main {
 }
 
 footer {
-    background: #1e3a8a;
+    background:#1e3a8a;
     color: white;
     text-align: center;
     padding: 20px 0;
